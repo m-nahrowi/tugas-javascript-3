@@ -14,11 +14,13 @@ const getMonth = (callback) => {
 
 
 let showMonth = (error, month) => {
-    month.map((num)=>{
-        
-        console.log(num) 
-    })
-    // console.log(array);
+      if (error !== null){
+        console.log(error)
+    }else{
+        month.map((num)=>{
+            console.log(num) 
+        })
+    }
 }
 
 getMonth(showMonth)
